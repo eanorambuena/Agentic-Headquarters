@@ -6,7 +6,7 @@ Personal AI Agent Headquarter con integración de OpenCode.
 
 ```
 .
-├── .opencode/
+├── .agents/                       # Directorio principal (symlink a .opencode)
 │   ├── skills/                    # Skills instalados
 │   │   ├── ask-questions-if-underspecified/
 │   │   ├── writing-plans/
@@ -17,6 +17,7 @@ Personal AI Agent Headquarter con integración de OpenCode.
 │       ├── learn.md
 │       ├── finish-work.md
 │       └── session-summary.md
+├── .opencode -> .agents            # Symlink para compatibilidad con OpenCode
 ├── planificacion/
 ├── ia-core/
 ├── knowledge/
