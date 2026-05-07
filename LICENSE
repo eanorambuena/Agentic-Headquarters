@@ -7,12 +7,12 @@ with the following restrictions:
 
 PERMITTED:
 - Use for personal, non-commercial purposes
-- Use for commercial purposes by individuals and small businesses (≤10 employees)
+- Use for commercial purposes by individuals or businesses with ≤$1M annual revenue
 - Modify, distribute, and use privately
 - Use in closed source projects
 
 NOT PERMITTED:
-- Use by megacorporations (companies with >1000 employees or >$100M annual revenue)
+- Use by companies with >$1M annual revenue
 - Use in products or services offered to third parties as a service
 - Sublicensing without explicit permission from the author
 
