@@ -1,12 +1,12 @@
 # Agentic-Headquarters
 
-Personal AI Agent Headquarter con integración de OpenCode.
+Personal AI Agent Headquarter compatible con OpenCode y Claude Code.
 
 ## Estructura
 
 ```
 .
-├── .agents/                       # Directorio principal (symlink a .opencode)
+├── .agents/                       # Directorio principal
 │   ├── skills/                    # Skills instalados
 │   │   ├── ask-questions-if-underspecified/
 │   │   ├── writing-plans/
@@ -17,7 +17,8 @@ Personal AI Agent Headquarter con integración de OpenCode.
 │       ├── learn.md
 │       ├── finish-work.md
 │       └── session-summary.md
-├── .opencode -> .agents            # Symlink para compatibilidad con OpenCode
+├── .opencode -> .agents            # Symlink para OpenCode
+├── .claude -> .agents              # Symlink para Claude Code
 ├── planificacion/
 ├── ia-core/
 ├── knowledge/
