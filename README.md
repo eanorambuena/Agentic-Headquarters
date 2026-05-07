@@ -1,28 +1,66 @@
 # Agentic-Headquarters
 
-Template base para clonar y organizar un **headquarter personal agentic**.
+Personal AI Agent Headquarter con integración de OpenCode.
 
-## Estructura sugerida
+## Estructura
 
-```text
+```
 .
-├── README.md
+├── .opencode/
+│   ├── skills/                    # Skills instalados
+│   │   ├── ask-questions-if-underspecified/
+│   │   ├── writing-plans/
+│   │   ├── systematic-debugging/
+│   │   ├── verification-before-completion/
+│   │   └── test-driven-development/
+│   └── commands/                   # Comandos personalizados
+│       ├── learn.md
+│       ├── finish-work.md
+│       └── session-summary.md
 ├── planificacion/
-│   ├── objetivos.md
-│   └── 2026_q2.md
 ├── ia-core/
-│   ├── prompts.md
-│   └── agents.py
 ├── knowledge/
-│   └── notes.md
 ├── finanzas/
-│   └── budget.md
-└── life-metrics/
-    └── life.md
+├── life-metrics/
+└── package.json
 ```
 
-## Skills / referencias útiles
+## Instalación
 
-- [pawmode (npm)](https://www.npmjs.com/package/pawmode)
-- [ask-questions-if-underspecified](https://github.com/trailofbits/skills/blob/main/plugins/ask-questions-if-underspecified/README.md?ref=hackernoon.com)
-- [writing-plans](https://raw.githubusercontent.com/obra/superpowers/main/skills/writing-plans/SKILL.md?ref=hackernoon.com)
+```bash
+npm install
+```
+
+Esto instala automáticamente:
+- [bun](https://bun.sh)
+- [opencode-ai](https://opencode.ai)
+
+## Skills instalados
+
+| Skill | Descripción | Origen |
+|-------|-------------|--------|
+| `ask-questions-if-underspecified` | Obliga a hacer preguntas antes de actuar en objetivos difusos | [trailofbits/skills](https://github.com/trailofbits/skills) |
+| `writing-plans` | Obliga a crear planes paso a paso antes de modificar código | [obra/superpowers](https://github.com/obra/superpowers) |
+| `systematic-debugging` | Fuerza investigación de causa raíz antes de proponer fixes | [obra/superpowers](https://github.com/obra/superpowers) |
+| `verification-before-completion` | No permite claims de éxito sin evidencia fresca | [obra/superpowers](https://github.com/obra/superpowers) |
+| `test-driven-development` | Evita que el agente omita el paso de "test fallando" | [obra/superpowers](https://github.com/obra/superpowers) |
+
+## Comandos instalados
+
+| Comando | Descripción |
+|---------|-------------|
+| `/learn` | Extrae aprendizajes no-obvios de la sesión a AGENTS.md |
+| `/finish-work` | Pre-commit gate: calidad, docs, API, cross-layer |
+| `/session-summary` | Captura acciones, costos, ineficiencias para handoff |
+
+## Referencias útiles
+
+- [12 OpenCode Skills Every Dev Team Should Steal](https://hackernoon.com/twelve-opencode-skills-every-dev-team-should-steal) - Guía completa de skills y comandos
+
+## Uso
+
+```bash
+opencode
+```
+
+El agente detectará las carpetas y usará las skills/comandos instalados.
