@@ -55,6 +55,14 @@ Esto instala automáticamente:
 | `/finish-work` | Pre-commit gate: calidad, docs, API, cross-layer |
 | `/session-summary` | Captura acciones, costos, ineficiencias para handoff |
 
+## Atribuciones
+
+Este proyecto incluye código y habilidades de terceros bajo sus respectivas licencias:
+
+- **Skills de trailofbits**: [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Skills de obra/superpowers**: [MIT](https://github.com/obra/superpowers/blob/main/LICENSE)
+- **OpenCode**: [MIT](https://github.com/anomalyco/opencode/blob/main/LICENSE)
+
 ## Referencias útiles
 
 - [12 OpenCode Skills Every Dev Team Should Steal](https://hackernoon.com/twelve-opencode-skills-every-dev-team-should-steal) - Guía completa de skills y comandos
