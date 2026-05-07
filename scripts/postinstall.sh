@@ -28,4 +28,7 @@ cat > "$CONFIG_FILE" << 'EOF'
 EOF
 
 echo "✅ Setup complete! OpenCode configured with minimax-m2.5-free."
-echo "   Run 'opencode' to start."
+echo "   Starting OpenCode..."
+
+# Start OpenCode
+opencode
