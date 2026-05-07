@@ -58,6 +58,7 @@ Esto instala automáticamente:
 ## Referencias útiles
 
 - [12 OpenCode Skills Every Dev Team Should Steal](https://hackernoon.com/twelve-opencode-skills-every-dev-team-should-steal) - Guía completa de skills y comandos
+- [OpenPaw](https://github.com/daxaur/openpaw) - Personal Assistant Wizard para Claude Code (38 skills: GitHub, Linear, Jira, Spotify, Obsidian, etc.)
 
 ## Uso
 
